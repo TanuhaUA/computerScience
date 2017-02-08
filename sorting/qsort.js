@@ -1,3 +1,5 @@
-/**
- * Created by tanuha on 2/8/17.
- */
+var a = {
+  a: "123",
+  b: 345
+};
+console.log(JSON.stringify(a));

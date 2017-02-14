@@ -11,7 +11,7 @@ function factorialR(a) {
 }
 
 window.f = factorialR;
-console.log(factorialR(3));
+// console.log(factorialR(3));
 
 function fib(n) {
   var res = [1,1];
@@ -24,9 +24,15 @@ function fib(n) {
 var resFib = [];
 
 function fibR(n) {
-
   return n > 1 ? fibR(n-1) + fibR(n-2) : n;
 }
 
 window.a = fibR;
-console.log(fibR(6));
+// console.log(fibR(6));
+
+function sumR(n) {
+  return n > 1 ? n + exp(n - 1) : n;
+}
+
+window.a = sumR;
+console.log(sumR(4));

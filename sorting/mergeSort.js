@@ -7,9 +7,6 @@ function mergeSort(array) {
   var array0 = array.slice(0, (array.length / 2));
   var array1 = array.slice((array.length / 2));
   var result = [];
-
-  // console.log("array0 ", array0, "array1 ", array1);
-
   var i = 0;
 
   while (array0.length > 0 && array1.length > 0) {
@@ -24,7 +21,6 @@ function mergeSort(array) {
       result[i] = array0[0];
       array0.splice(0, 1);
     }
-    // console.log(i);
     i++;
   }
 
@@ -35,6 +31,5 @@ function mergeSort(array) {
     result = result.concat(array1);
   }
 
-  // console.log("result ", result);
   return result;
 }
